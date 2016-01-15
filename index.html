@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+0<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -19,7 +19,11 @@
               -->
             <span class="input-group-addon" id="sizing-addon1"><span class="glyphicon glyphicon-search"></span></span>
             <input type="text" class="form-control" placeholder="Search">
+
           </div>
+
+          <h4> Note: Clicking on an item in the list will delete it </h4>
+
           <div class="tableWrapper">
             <table class="table table-striped table-hover">
               <tr>
@@ -27,6 +31,10 @@
                 <th>Building Name</th>
                 <th></th>
               </tr>
+              <tr ng-repeat="listing in listings" ng-click="deleteListing($index)"{{listing}}>
+                <td> {{listing.code}}</td>
+                <td> {{listing.name}}</td>
+
               <!-- 
 
                   Fill in the rest of the table:
@@ -34,6 +42,7 @@
                       * include a way to remove individual listings
 
                 --> 
+              </tr>
             </table>
           </div>
           <!-- 
@@ -41,6 +50,11 @@
               Write an HTML form that adds new listings to the directory 
 
             -->
+
+          <h3> Add Listing</h3>
+          <input type="text" ng-model= "newListing">
+          <button ng-click="addListing()">Add Listing</button>
+          <p>{{newListing}}</p>
         </div>
         <div class="col-md-6">
           <div class="jumbotron">
