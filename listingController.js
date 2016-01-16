@@ -30,6 +30,7 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
     $scope.detailedInfo = undefined;
 	$scope.showDeleteButton = false;
 	$scope.currentIndex = undefined;
+	$scope.showInfoHeads = false;
     /* 
       Implement these functions in the controller to make your application function 
       as described in the assignment spec. 
@@ -46,11 +47,13 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
       $scope.listings.splice(index, 1);
 	  $scope.currentIndex = undefined;
 	  $scope.showDeleteButton = false;
+	  $scope.showInfoHeads = false;
 	  $scope.detailedInfo = undefined;
     };
     $scope.showDetails = function(index) {
 		$scope.detailedInfo = $scope.listings[index];
 		$scope.showDeleteButton = true;
+		$scope.showInfoHeads = true;
 		$scope.currentIndex = index;
 	};
   }
