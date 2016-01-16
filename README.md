@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Introduction to Front-end development with Angular.js
 We will continue to build upon our directory application by creating a front-end interface with Angular.js to display listings, as well as the ability to add new listings and delete old ones.
 
@@ -85,12 +84,3 @@ Take a look at the source code provided to you, and map out how the different fi
 4. Points towards Project Bidding - Style your page using CSS
 
 Note: Project Bidding Points give your group an edge over other groups for priority in choosing projects
-=======
-# CEN3031 Assignment
-
-This repo contains 5 assignments for CEN3031.
-Switch branches to view the assignments.
-
-## [Assignment 1](https://github.com/CEN3031-spr16/UF-Directory-App-Assignment/tree/Assignment1)
-Introduction to HTTP and Asynchronous Programming using Node.js
->>>>>>> 0b80a7896b02b172bd18bd4f93e7d4dcddebac8b
