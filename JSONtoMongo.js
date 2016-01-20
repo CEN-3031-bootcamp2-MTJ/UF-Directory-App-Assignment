@@ -28,6 +28,8 @@ var fs = require('fs'),
     var currentListing = listings.entries[i];
 
     var currentEntry = new Listing({
+    //added commented line below, didnt uncomment to test because of duplicate creation in database
+    //  currentListing.coordinates = currentListing.entries[i].coordinates || {};
       code: currentListing.code,
       name: currentListing.name,
       coordinates: currentListing.coordinates,
